@@ -46,7 +46,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "sap",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
