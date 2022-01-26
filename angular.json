@@ -5,6 +5,9 @@
       "component": {
         "changeDetection": "OnPush"
       }
+    },
+    "@schematics/angular:component": {
+      "style": "scss"
     }
   },
   "cli": {
@@ -61,7 +64,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -128,7 +131,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
