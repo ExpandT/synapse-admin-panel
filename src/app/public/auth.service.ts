@@ -12,9 +12,14 @@ export class AuthService {
 
   constructor(private readonly httpClient: HttpClient) {}
 
-
   login(data: LoginForm): Observable<LoginResponse> {
     const url = `${environment.url}/login/`;
+
+    return this.httpClient.post<LoginResponse>(url, data);
+  }
+
+  register(data: LoginForm): Observable<LoginResponse> {
+    const url = `${environment.url}/register/`;
 
     return this.httpClient.post<LoginResponse>(url, data);
   }

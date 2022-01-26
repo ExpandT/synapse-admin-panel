@@ -1,6 +1,6 @@
 @import "src/styles/_constants.scss";
 
-.sign-in-form {
+.sign-up-form {
 
   .additional-info {
     font-size: 14px;
@@ -56,7 +56,32 @@
     }
   }
 
-  .login-button {
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+
+    input {
+      width: 18px;
+      height: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: $color-light-gray;
+      margin: 0;
+
+      a{
+        color: $color-light-gray;
+      }
+
+    }
+
+  }
+
+  .register-button {
     width: 100%;
     height: 40px;
     font-size: 14px;
@@ -70,6 +95,12 @@
     cursor: pointer;
     outline: inherit;
     border-radius: 4px;
-    margin-top: 17px;
   }
+
+  .register-button:disabled {
+    cursor: unset;
+    background-color: $color-main-accent;
+    opacity: 0.4;
+  }
+
 }

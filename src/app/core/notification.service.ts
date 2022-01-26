@@ -13,6 +13,7 @@ export class NotificationService {
     const messageToDisplay = message === undefined ? 'Something went wrong' : message;
 
     return this.matSnackBar.openFromComponent<CustomSnackbarComponent>(CustomSnackbarComponent, {
+      duration: 5000,
       data: {
         message: messageToDisplay,
         icon: 'close',

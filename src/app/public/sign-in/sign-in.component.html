@@ -1,14 +1,14 @@
 <sap-public-wrapper>
 <div class="sign-in-form">
-  <p class="additional-info">Don’t have an account? <a routerLink="sign-up">Sign Up</a></p>
+  <p class="additional-info">Don’t have an account? <a routerLink="/public/sign-up">Sign Up</a></p>
 
   <h1 class="heading">Sign in to Synapse Internship</h1>
   <p class="subheading">Sign in on our platform</p>
 
   <form [formGroup]="form">
     <div class="fields">
-        <input placeholder="Username" formControlName="username" />
-        <input placeholder="Password" formControlName="password" />
+        <input placeholder="Username" type="text" formControlName="username" />
+        <input placeholder="Password" type="password" formControlName="password" />
     </div>
 
     <button class="login-button" (click)="login()">Sign In</button>

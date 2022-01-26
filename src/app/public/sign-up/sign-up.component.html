@@ -1,0 +1,24 @@
+<sap-public-wrapper>
+  <div class="sign-up-form">
+    <p class="additional-info">Have an account? <a routerLink="/public/sign-in">Sign In</a></p>
+
+    <h1 class="heading">Sign up to Synapse Internship</h1>
+    <p class="subheading">Sign up on our platform</p>
+
+    <form [formGroup]="form">
+      <div class="fields">
+        <input placeholder="Username" type="text" formControlName="username" />
+        <input placeholder="Password" type="password" formControlName="password" />
+        <input placeholder="Confirm password" type="password" formControlName="confirm_password" />
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" formControlName="terms_conditions">
+        <p>I have read the <a href="#">Terms and Conditions</a>.</p>
+      </div>
+
+      <button class="register-button" [disabled]="!isChecked" (click)="register()">Sign Up</button>
+    </form>
+
+  </div>
+</sap-public-wrapper>
