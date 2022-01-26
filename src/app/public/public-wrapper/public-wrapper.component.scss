@@ -1,4 +1,4 @@
-@import "src/styles/constants";
+@import "src/styles/_constants.scss";
 
 .public-wrapper {
   height: 100vh;
@@ -23,6 +23,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      background-color: $color-white;
       box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px rgba(63, 63, 68, 0.15);
     }
 
