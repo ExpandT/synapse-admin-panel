@@ -24,4 +24,8 @@ export class AuthService {
     return this.httpClient.post<LoginResponse>(url, data);
   }
 
+  isUserLoggedIn(): boolean {
+    return localStorage.getItem('AccessToken') !== null;
+  }
+
 }

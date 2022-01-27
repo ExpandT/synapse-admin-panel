@@ -1,0 +1,106 @@
+@import "src/styles/_constants.scss";
+
+mat-sidenav {
+  width: 270px;
+  background: $color-white;
+  color: white;
+  padding: 16px;
+  text-align: center;
+
+  .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: $color-main-white-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $color-dark;
+    margin: 0 auto;
+  }
+
+  .company-name {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-dark;
+    margin: 16px 0;
+  }
+
+  .divider {
+    height: 1px;
+    background: $color-main-white-3;
+  }
+
+  .menu-button {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    background-color: $color-main-white-2;
+    border-radius: 4px;
+    margin-top: 19px;
+
+    &.active {
+      box-shadow: inset 3px 0 0 $color-main-accent;
+    }
+
+    mat-icon{
+      margin-left: 18px;
+      margin-right: 11px;
+      color: $color-light-gray;
+    }
+
+  }
+
+}
+
+mat-sidenav-content {
+
+  .content {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+
+  .additional-info {
+    margin: 0 24px;
+
+    .divider {
+      height: 1px;
+      background: rgba($color-light-gray, 0.2);
+      margin-top: 16px;
+    }
+
+    h1 {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: $color-light-gray-2;
+      margin: 10px 0 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      color: $color-light-gray;
+      margin: 4px 0 0;
+    }
+
+  }
+
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 64px);
+  background-color: $color-main-white;
+}
+

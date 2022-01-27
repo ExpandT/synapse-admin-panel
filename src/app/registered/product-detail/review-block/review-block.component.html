@@ -1,0 +1,13 @@
+<div class="review-block">
+  <div class="heading">
+    <h1>{{userName}}</h1>
+    <p>{{createdDate | date: 'medium'}}</p>
+  </div>
+
+  <form [formGroup]="form">
+    <ngx-star-rating formControlName="rate" [id]="'rate'" [disabled]="true"></ngx-star-rating>
+  </form>
+
+  <p>{{description}}</p>
+
+</div>

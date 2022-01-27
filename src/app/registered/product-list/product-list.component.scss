@@ -1,0 +1,52 @@
+@import "src/styles/_constants.scss";
+
+.product-list {
+  height: 800px;
+  border-radius: 4px;
+  background-color: $color-white;
+
+  table {
+    width: 100%;
+
+    th {
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 20px;
+      font-weight: 500;
+      color: $color-dark;
+    }
+
+    td {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      color: $color-dark;
+    }
+
+    .align-right{
+      display: flex;
+      padding: 21px 33px 21px 0;
+      justify-content: flex-end;
+    }
+
+    .actions {
+      padding: 12px 33px 12px 0;
+
+      button{
+        width: 120px;
+        height: 40px;
+        background-color: $color-main-accent;
+        color: $color-white;
+        text-transform: uppercase;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+      }
+
+    }
+
+  }
+
+}

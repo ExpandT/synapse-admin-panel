@@ -1,0 +1,22 @@
+<sap-header></sap-header>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <div class="logo">ST</div>
+    <p class="company-name">Synapse Team</p>
+
+    <div class="divider"></div>
+
+    <button class="menu-button" routerLink="product-list" routerLinkActive="active"><mat-icon svgIcon="shopping-basket"></mat-icon> Products</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class="additional-info">
+      <div class="divider"></div>
+      <h1>© Synapse Internship. 2021</h1>
+      <p>This is a version for test tasks for Angular developers</p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

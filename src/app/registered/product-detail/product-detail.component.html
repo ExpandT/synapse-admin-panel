@@ -1,0 +1,32 @@
+<div class="product-details">
+
+  <div class="product-info">
+    <img class="image" [src]="productImage">
+    <h1>{{selectedProduct.title}}</h1>
+    <p>{{selectedProduct.text}}</p>
+  </div>
+
+  <div class="reviews">
+
+  <div class="review-form">
+    <h1>Your Review</h1>
+
+    <div class="divider"></div>
+
+    <form [formGroup]="form">
+      <textarea placeholder="Type your review..." formControlName="text"></textarea>
+
+      <ngx-star-rating formControlName="rate" [id]="'rating'"></ngx-star-rating>
+
+      <button type="submit" (click)="postReview()">Submit Review</button>
+    </form>
+
+  </div>
+
+    <div class="reviews-list">
+      <sap-review-block *ngFor="let review of productReviews" [createdDate]="review.created_at" [description]="review.text" [rate]="review.rate" [userName]="review.created_by.username"></sap-review-block>
+    </div>
+
+  </div>
+
+</div>

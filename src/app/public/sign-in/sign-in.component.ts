@@ -32,11 +32,11 @@ export class SignInComponent {
     const loginData = this.form.getRawValue();
 
     this.authService.login(loginData).pipe(tap((res: LoginResponse) => {
-      if(!res.success) {
+      if(res.success === false) {
         this.notificationService.openMessage(res.message);
 
         return;
-      } else if (res.success) {
+      } else if (res.success === true) {
         this.tokenStorageService.storeToken(res.token)
         this.router.navigate(['']);
       }
